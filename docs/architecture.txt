@@ -1,0 +1,14 @@
+# AI Enterprise OS Architecture
+
+## 1. Architecture Overview
+
+AI Enterprise OS is an enterprise-grade AI Agent platform designed to orchestrate, execute, and manage intelligent workflows. Instead of building isolated AI applications for different business scenarios, the platform provides a unified architecture that enables reusable AI capabilities across the organization.
+
+The system adopts a four-layer architecture to separate user interaction, business orchestration, AI capabilities, and infrastructure. This layered design reduces coupling between modules, improves maintainability, and allows each layer to evolve independently as the platform grows.
+
+The architecture consists of the following layers:
+
+* **Presentation Layer** – Provides user interfaces such as the AI Chat Portal and future dashboards.
+* **Application Layer** – Handles business orchestration, workflow management, authentication, and API services.
+* **AI Capability Layer** – Provides reusable AI capabilities, including Agents, Memory, Knowledge Retrieval, Tool Calling, and Model Routing.
+* **Infrastructure Layer** – Integrates external services and system resources such as LLM providers, databases, object storage, and caching systems.
