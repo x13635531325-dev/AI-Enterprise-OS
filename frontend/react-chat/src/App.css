@@ -1,0 +1,106 @@
+.chat-page {
+  min-height: 100vh;
+  padding: 32px;
+}
+
+.chat-page h1 {
+  text-align: center;
+  color: #111827;
+}
+
+.chat-container {
+  width: min(800px, 100%);
+  margin: 40px auto;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.message-list {
+  min-height: 300px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  background-color: #fafafa;
+}
+
+.message {
+  max-width: 70%;
+  margin: 0 0 12px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  line-height: 1.6;
+}
+
+.user-message {
+  margin-left: auto;
+  background-color: #111827;
+  color: white;
+}
+
+.ai-message {
+  margin-right: auto;
+  background-color: #e5e7eb;
+  color: #111827;
+}
+
+.loading-message {
+  color: #4b5563;
+}
+
+.error-message {
+  background-color: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+.input-area {
+  display: flex;
+  gap: 8px;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+
+.input-area button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #111827;
+  color: white;
+  cursor: pointer;
+}
+
+.input-area button:hover {
+  background-color: #374151;
+}
+
+.input-area button:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+@media (max-width: 640px) {
+  .chat-page {
+    padding: 16px;
+  }
+
+  .chat-container {
+    margin: 24px auto;
+    padding: 16px;
+  }
+
+  .message {
+    max-width: 90%;
+  }
+
+  .input-area {
+    flex-direction: column;
+  }
+}

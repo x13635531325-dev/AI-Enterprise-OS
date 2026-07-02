@@ -4,6 +4,31 @@ const messageList = document.getElementById("messageList");
 
 let isGenerating = false;
 
+let messages = [
+  {
+    id: 1,
+    role: "user",
+    content: "你好，请介绍一下这个系统。",
+    status: "normal"
+  },
+  {
+    id: 2,
+    role: "ai",
+    content: "这是一个企业级 AI Agent 平台。",
+    status: "normal"
+  }
+];
+
+function renderMessages() {
+  messageList.innerHTML = "";
+
+  for (const message of messages) {
+    addMessage(message.role, message.content);
+  }
+}
+
+renderMessages();
+
 function addMessage(role, text) {
   const message = document.createElement("p");
 
@@ -42,8 +67,25 @@ function sendMessage() {
     return;
   }
 
-  addMessage("user", text);
-
+  messages.push({
+    id: Date.now(),
+    role: "user",
+    content: text,
+    status: "normal"
+  });
+  
+  renderMessages();
+  
+  const aiMessage = {
+    id: Date.now() + 1,
+    role: "ai",
+    content: "",
+    status: "loading"
+  };
+  
+  messages.push(aiMessage);
+  
+  renderMessages();
   messageInput.value = "";
 
   isGenerating = true;
