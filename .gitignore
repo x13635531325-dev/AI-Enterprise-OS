@@ -60,6 +60,15 @@ cover/
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
+backend/data/*.sqlite3
+backend/data/*.sqlite3-journal
+backend/app/evals/reports/*.json
+backend/data/crawl_checkpoints/
+backend/data/crawl_exports/
+backend/data/pytest-*/
+backend/data/pt-*/
+backend/data/test-temp/
+.scrapling_cache/
 
 # Flask stuff:
 instance/

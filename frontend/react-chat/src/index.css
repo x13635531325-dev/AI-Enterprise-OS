@@ -1,9 +1,17 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f3f4f6;
+  font-family: Aptos, 'Microsoft YaHei UI', 'PingFang SC', 'Segoe UI', sans-serif;
+  background-color: #eef1f3;
+  color: #172026;
 }
 
 * {
   box-sizing: border-box;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
 }

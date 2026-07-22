@@ -30,7 +30,7 @@ function getMessageClassName(message) {
 function MessageBubble({ message }) {
   return (
     <p className={getMessageClassName(message)}>
-      <strong>{message.role === 'user' ? 'User: ' : 'AI: '}</strong>
+      <strong>{message.role === 'user' ? '用户：' : 'AI：'}</strong>
       {getMessageContent(message)}
     </p>
   )

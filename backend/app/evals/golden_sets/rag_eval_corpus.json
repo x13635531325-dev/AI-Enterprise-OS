@@ -1,0 +1,21 @@
+{
+  "name": "rag_eval_corpus",
+  "version": "v1",
+  "description": "Small document corpus used by the RAG answer golden set.",
+  "documents": [
+    {
+      "title": "Project Atlas Release Procedure",
+      "content": "Project Atlas production release must use authorization code ORCHID-742. Approval is required from both the Platform Lead and the Security Lead.",
+      "metadata": {
+        "domain": "release"
+      }
+    },
+    {
+      "title": "Employee Annual Leave Policy",
+      "content": "Employees receive twenty days of paid annual leave each calendar year.",
+      "metadata": {
+        "domain": "hr"
+      }
+    }
+  ]
+}

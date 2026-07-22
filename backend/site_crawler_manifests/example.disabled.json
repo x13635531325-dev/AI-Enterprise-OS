@@ -1,0 +1,14 @@
+{
+  "id": "new-site",
+  "name": "New education site",
+  "description": "Website-specific paper crawler.",
+  "root": "D:/crawlers/new-site-scrapling",
+  "executable_name": "new-site-scrapling.exe",
+  "actions": ["probe", "inspect", "login", "download"],
+  "capabilities": [
+    "authorized session",
+    "paper download",
+    "OSS upload",
+    "business database import"
+  ]
+}

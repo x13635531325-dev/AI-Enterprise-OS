@@ -1,0 +1,9 @@
+﻿fastapi
+uvicorn[standard]
+openai
+pydantic-settings
+sentence-transformers
+pydantic
+scrapling[fetchers]==0.4.11
+alibabacloud-oss-v2==1.3.2
+PyMySQL==1.1.2

@@ -1,0 +1,3 @@
+$ErrorActionPreference = "Stop"
+
+scrapling install

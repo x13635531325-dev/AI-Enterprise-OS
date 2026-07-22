@@ -8,7 +8,7 @@ export const initialMessages = [
   {
     id: 2,
     role: 'ai',
-    content: '这是一个企业级 AI Agent 平台。',
+    content: '这是一个企业级 AI 智能体平台。',
     status: 'normal',
   },
 ]

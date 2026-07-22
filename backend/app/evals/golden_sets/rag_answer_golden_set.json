@@ -1,0 +1,32 @@
+{
+  "name": "rag_answer_golden_set",
+  "version": "v1",
+  "description": "Small golden set for validating grounded RAG answers with expected facts.",
+  "cases": [
+    {
+      "name": "atlas_release_authorization_code",
+      "question": "What is the Project Atlas authorization code?",
+      "expected_facts": [
+        "ORCHID-742"
+      ],
+      "min_fact_coverage": 1.0
+    },
+    {
+      "name": "atlas_release_approvers",
+      "question": "Who must approve the Project Atlas production release?",
+      "expected_facts": [
+        "Platform Lead",
+        "Security Lead"
+      ],
+      "min_fact_coverage": 1.0
+    },
+    {
+      "name": "annual_leave_days",
+      "question": "How many days of annual leave do employees receive?",
+      "expected_facts": [
+        "twenty days"
+      ],
+      "min_fact_coverage": 1.0
+    }
+  ]
+}
